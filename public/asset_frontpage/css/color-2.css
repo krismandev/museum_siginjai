@@ -1,0 +1,97 @@
+/* Default Color File  */
+
+:root {
+    --theme-color: #1b2b58;
+}
+
+.theme-color {
+    color: var(--theme-color);
+}
+
+/* Color */
+a:hover,
+a {
+    color: #1b2b58;;
+}
+
+.preloader-close,
+.search-popup .search-form fieldset input[type="submit"] {
+    background-color: #1b2b58;
+}
+
+.btn-style-one {
+    background-color: #1b2b58;
+}
+
+.main-header .header-upper .search-box button:before {
+    background-color: #1b2b58;
+}
+
+.main-header.ex_shop_header .header-upper .right-info li a:hover {
+    color: #1b2b58;
+}
+
+.ex_shop_header .header-phone-number a:hover{
+    color: #1b2b58;
+}
+
+.main-header .header-upper .right-info li .shopping-cart .count {
+    background: #1b2b58;
+}
+
+.main-menu .navigation>li>ul>li>a:hover {
+    color: #1b2b58;
+}
+
+.hidden-sidebar .content-wrapper {
+    background-color: #1b2b58;
+}
+
+.banner-section_hr_001 .banner-slider-button-next:hover {
+    background-color: #1b2b58;
+}
+
+.banner-section_hr_001 .banner-slider-button-prev:hover {
+    background-color: #1b2b58;
+}
+
+.links-widget_hr_001 li a:hover {
+    color: rgb(227, 87, 17);
+}
+
+.contact-widget_hr_001 ul li a:hover {
+    color: rgb(227, 87, 17);
+}
+
+.footer-bottom_hr_001 .menu li a:hover {
+    color: rgb(227, 87, 17);
+}
+
+.ex_shop_header .header-lower .shop-category > a{
+    background-color: #1b2b58;
+}
+
+.ex_shop_header .header-lower .shop-category > ul>li>a:hover{
+    color: #1b2b58;
+}
+
+.ex_shop_header .header-lower .shop-category > ul>li> ul>li>a:hover{
+    color: #1b2b58;
+}
+
+.ex_shop_header .main-menu .navigation > li > ul > li > a:hover, 
+.ex_shop_header .main-menu .navigation > li > .megamenu li > a:hover{
+    color: #1b2b58;
+}
+
+.ex_shop_header .main-menu .navigation > li > .megamenu li > a:before{
+    background-color: #1b2b58;
+}
+
+.ex_shop_header .main-menu .navigation > li > ul > li > ul > li > a:hover{
+    color: #1b2b58;
+}
+
+.ex_shop_header .header-top ul.contact-info li a:hover{
+    color: #1b2b58;
+}
