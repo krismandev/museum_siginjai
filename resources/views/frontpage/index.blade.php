@@ -39,7 +39,7 @@
 </section>
 
 <section class="sidebar-page-container">
-    <div class="auto-container" style="max-width: 1200px; margin-bottom: 0px;">
+    <div class="auto-container" style="max-width: 1200px; margin-bottom: 0px; margin-top: 50px;">
         <div class="row">
             <div class="col-lg-3">
                 <div style="margin: 0;
@@ -51,22 +51,25 @@
                 </div>
             </div>
             <div class="col-lg-3" style="padding: 10px">
-                <div style="border: 0.5px solid; border-radius: 10px; margin: 0px; padding: 20px; border-color: gray;">
+                <div style="border: 0.5px solid; border-radius: 10px; margin: 0px; padding: 20px; border-color: gray; height: 200px;">
                     <span>01</span>
-                    <h3>Diresmikan Tahun 2012</h3>  
+                    <h4>Diresmikan Th 2012</h4>  
+                    <p>Museum Siginjei Jambi diresmikan pada 30 Oktober 2012</p>
                 </div>
             </div>
             
             <div class="col-lg-3" style="padding: 10px">
-                <div style="border: 0.5px solid; border-radius: 10px; margin: 0px; padding: 20px; border-color: gray;">
+                <div style="border: 0.5px solid; border-radius: 10px; margin: 0px; padding: 20px; border-color: gray; height: 200px;">
                     <span>02</span>
-                    <h3>Lokasi Strategis</h3>
+                    <h4>Lokasi Strategis</h4>
+                    <p>Museum Siginjei Jambi terletak di daerah perkotaan kota Jambi </p>
                 </div>
             </div>
             <div class="col-lg-3" style="padding: 10px">
-                <div style="border: 0.5px solid; border-radius: 10px; margin: 0px; padding: 20px; border-color: gray;">
+                <div style="border: 0.5px solid; border-radius: 10px; margin: 0px; padding: 20px; border-color: gray; height: 200px;">
                     <span>03</span>
-                    <h3>Ribuan Koleksi</h3>
+                    <h4>Ribuan Koleksi</h4>
+                    <p>Museum Siginjei Jambi memiliki ribuan koleksi - koleksi bersejarah</p>
                 </div>
             </div>
         </div>

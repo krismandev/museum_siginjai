@@ -184,7 +184,7 @@
                                             <a href="{{route('koleksi')}}">Koleksi</a>
                                         </li>
                                         <li class="{{(request()->is('virtual*'))?'current': ''}}">
-                                            <a href="/">Virtual Tour</a>
+                                            <a href="https://virtual-tour.e-siginjeimuseum.online/">Virtual Tour</a>
                                         </li>
                                         <li class="{{(request()->is('event*'))?'current': ''}}">
                                             <a href="{{route('event')}}">Kegiatan</a>
@@ -227,12 +227,12 @@
                             </nav>
                         </div>
                         <div class="nav-right">
-                            <div class="search-box-outer search-toggler">
+                            {{-- <div class="search-box-outer search-toggler">
                                 <i class="icon-1"></i>
                             </div>
                             <div class="nav-btn nav-toggler navSidebar-button clearfix">
                                 <i class="icon-22"></i>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -281,27 +281,39 @@
             <div class="auto-container">
                 <div class="footer-widget-section">
                     <div class="row clearfix">
-                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+                        <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget about-widget wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                                <figure class="footer-logo p_relative d_block mb_35"><a href="index-3.html"><img src="{{asset('asset_frontpage/images/logo-4.png')}}" alt=""></a></figure>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor incididunt labore dolore magna aliqua enim ad minim.</p>
+                                <div class="row" style="padding-left: 20px;">
+                                    <div class="col-lg6">
+                                        <figure class="footer-logo p_relative mb_35"><a href="index-3.html"><img src="{{asset('asset_frontpage/images/kota_jambi_logo.png')}}" style="max-width: 80px;" alt=""></a></figure>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <b style="color: white;">MUSEUM <br> SIGINJEI</b>
+                                    </div>
                                 </div>
+                                {{-- <div class="text">
+                                    <p>Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor incididunt labore dolore magna aliqua enim ad minim.</p>
+                                </div> --}}
+                                {{-- <div class="col-lg-6 col-sm-3">
+                                    <img src="{{asset('asset_frontpage/images/kota_jambi_logo.png')}}" class="float_right" style="max-width: 50px;" alt="">
+                                </div>
+                                <div class="col-lg-6 col-sm-3 site-title" style="padding-left: 0px !important">
+                                    <b>MUSEUM SIGINJEI</b>
+                                </div> --}}
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget links-widget ml_80 wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
                                 <div class="widget-title">
-                                    <h4>Links</h4>
+                                    <h4>Fitur</h4>
                                 </div>
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
-                                        <li><a href="index.html">About</a></li>
-                                        <li><a href="index.html">Services</a></li>
-                                        <li><a href="index.html">Job</a></li>
-                                        <li><a href="index.html">opportunities</a></li>
-                                        <li><a href="index.html">Location</a></li>
-                                        <li><a href="index.html">Article</a></li>
+                                        <li><a href="{{route('koleksi')}}">Koleksi</a></li>
+                                        <li><a href="https://virtual-tour.e-siginjeimuseum.online/">Virtual Tour</a></li>
+                                        <li><a href="{{route('event')}}">Kegiatan</a></li>
+                                        <li><a href="{{route('berita')}}">Berita</a></li>
+                                        <li><a href="{{route('tentang')}}">Tentang</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -309,16 +321,14 @@
                         <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget links-widget wow fadeInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
                                 <div class="widget-title">
-                                    <h4>Services</h4>
+                                    <h4>Kontak</h4>
                                 </div>
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
-                                        <li><a href="index.html">About</a></li>
-                                        <li><a href="index.html">Services</a></li>
-                                        <li><a href="index.html">Job</a></li>
-                                        <li><a href="index.html">opportunities</a></li>
-                                        <li><a href="index.html">Location</a></li>
-                                        <li><a href="index.html">Article</a></li>
+                                        <li>Email: museum@gmail.com</li>
+                                        <li>No. Telp: 0741526738</li>
+                                        <li></li>
+                                        <li>Jalan Jendral Urip Sumoharjo, Sungai Putri, Kecamatan Telanaipura, Kota Jambi, Jambi, 36124</li>
                                     </ul>
                                 </div>
                             </div>
@@ -326,15 +336,29 @@
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget contact-widget wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
                                 <div class="widget-title">
-                                    <h4>Contacts</h4>
+                                    <h4>Jam Operasional</h4>
                                 </div>
                                 <div class="widget-content">
-                                    <ul class="info-list clearfix">
-                                        <li>Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</li>
-                                        <li><a href="tel:23055873407">+2(305) 587-3407</a></li>
+                                    {{-- <ul class="info-list clearfix">
+
+                                        <li>Senin - Kamis 08:00 - 15:00 WIB</li>
+                                        <li>Jumat 07</li>
                                         <li><a href="mailto:sample@example.com">sample@example.com</a></li>
-                                    </ul>
+                                    </ul> --}}
+                                    <div class="row" style="color: white;">
+                                        <div class="col-lg-6">Senin - Kamis</div>
+                                        <div class="col-lg-6">08:00 - 15:00 WIB</div>
+                                    </div>
+                                    <div class="row" style="color: white;">
+                                        <div class="col-lg-6">Jumat</div>
+                                        <div class="col-lg-6">07:15 - 11:00 WIB</div>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget contact-widget wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15952.991254805067!2d103.5925894!3d-1.6076637!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2588f52e97627f%3A0xa9fe255ac7c508d6!2sMuseum%20Siginjei!5e0!3m2!1sid!2sid!4v1667287817932!5m2!1sid!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
@@ -344,12 +368,12 @@
                 <div class="auto-container">
                     <div class="bottom-inner clearfix">
                         <div class="copyright pull-left">
-                            <p><a href="index.html">ATRIX</a> &copy; 2021 All Right Reserved</p>
+                            <p><a href="index.html">Museum Siginjei Jambi</a> &copy; 2021</p>
                         </div>
-                        <ul class="footer-nav clearfix pull-right">
+                        {{-- <ul class="footer-nav clearfix pull-right">
                             <li><a href="index.html">Terms of Service</a></li>
                             <li><a href="index.html">Privacy Policy</a></li>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
             </div>
