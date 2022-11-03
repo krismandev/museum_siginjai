@@ -41,7 +41,7 @@
         </div>
     </section>
     <div class="p_absolute centred" style="width: 100%; z-index:99999; margin-top: -50px;">
-        <div class="search_card" style="background-color: white; width: 40%; height: auto; margin: 0 auto; border-radius: 10px; box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);">
+        <div class="search_card custom_box_shadow" style="background-color: white; width: 40%; height: auto; margin: 0 auto; border-radius: 10px;">
             <div class="sidebar-widget search-widget p_relative d_block pt_35 pr_20 pb_30 pl_20 b_radius_10">
                 <div class="search-inner">
                     <form action="{{route('koleksi')}}" method="get" class="search-form">
@@ -94,7 +94,7 @@
         <div class="auto-container" style="margin:0 20px !important;">
             <div class="row clearfix">
                 <div class="col-lg-3 col-md-12 col-sm-12 sidebar-side">
-                    <div class="blog-sidebar p_relative d_block ml_20 b_shadow_6 b_radius_10">
+                    <div class="blog-sidebar p_relative d_block ml_20 custom_border b_radius_10">
                         {{-- <div class="sidebar-widget search-widget p_relative d_block pt_35 pr_20 pb_30 pl_20 b_radius_10">
                             <div class="widget-title p_relative d_block mb_35">
                                 <h3 class="d_block fs_24 lh_30">Cari Koleksi</h3>
@@ -128,9 +128,9 @@
                     <div class="auto-container">
                         <div class="row clearfix">
                             @foreach ($koleksis as $koleksi)
-                            <div class="col-lg-4 col-md-6 col-sm-12 news-block mt_10">
+                            <div class="col-lg-4 col-md-6 col-sm-12 news-block mb_10">
                                 <div class="news-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
-                                    <div class="inner-box p_relative d_block b_radius_10 b_shadow_6">
+                                    <div class="inner-box p_relative d_block b_radius_10 custom_border">
                                         {{-- <div class="pattern-layer" style="background-image: url({{asset('asset_frontpage/images/shape/shape-60.png')}});"></div> --}}
                                         <div class="lower-content d_block pt_10 pr_20 pb_20 pl_20">
                                             <div class="col-lg-12" style="padding: 0 0;">
@@ -139,10 +139,13 @@
                                                 {{-- </div> --}}
                                             </div>
                                             <h4 class="d_block fs_20 lh_30 mb_15 mt_10"><a href="{{route("koleksi.detail",encrypt($koleksi->no_jenis."|".$koleksi->no_koleksi))}}">{{$koleksi->nama_koleksi}}</a></h4>
-                                            <p class="d_block mb_20">{{Str::limit(strip_tags(preg_replace('/<[^>]*>/','',str_replace(array("&nbsp;","\n","\r"),"",html_entity_decode($koleksi->deskripsi,ENT_QUOTES,'UTF-8')))),150)}}</p>
+                                            <p class="d_block mb_20">{{Str::limit(strip_tags(preg_replace('/<[^>]*>/','',str_replace(array("&nbsp;","\n","\r"),"",html_entity_decode($koleksi->deskripsi,ENT_QUOTES,'UTF-8')))),70)}}</p>
                                             <div class="btn-box">
-                                                <a href="{{route("koleksi.detail",encrypt($koleksi->no_jenis."|".$koleksi->no_koleksi))}}" class="theme-btn theme-btn-two"><span data-text="Lihat detail">Lihat detail</span></a>
+                                                <a style="border: none; padding-left: 0px;" href="{{route("koleksi.detail",encrypt($koleksi->no_jenis."|".$koleksi->no_koleksi))}}" class="theme-btn theme-btn-two"><span data-text="Lihat Koleksi">Lihat Koleksi</span></a>
                                             </div>
+                                            {{-- <b>
+                                                <a style="color: #1a2345;" href="{{route("koleksi.detail",encrypt($koleksi->no_jenis."|".$koleksi->no_koleksi))}}">Lihat Koleksi</a>
+                                            </b> --}}
                                         </div>
                                     </div>
                                 </div>

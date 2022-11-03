@@ -49,7 +49,7 @@
             @endphp
             <li class="nav-item has-treeview {{$koleksi_menu_active == true ? 'menu-open' : ''}}">
               <a href="#" class="nav-link {{$koleksi_menu_active == true ? 'active' : ''}}">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <i class="nav-icon fa fa-diamond"></i>
                 <p>
                   Koleksi
                   <i class="right fas fa-angle-left"></i>
@@ -74,7 +74,7 @@
             </li>
             <li class="nav-item">
               <a href="{{route('admin.berita.index')}}" class="nav-link {{(request()->is('dashboard/berita*'))?'active': ''}}">
-                  <i class="nav-icon fa fa-tag"></i>
+                  <i class="nav-icon fa fa-newspaper-o"></i>
                   <p>
                   Berita
                   </p>
@@ -82,7 +82,7 @@
             </li>
             <li class="nav-item">
               <a href="{{route('admin.slider.index')}}" class="nav-link {{(request()->is('dashboard/slider*'))?'active': ''}}">
-                  <i class="nav-icon fa fa-tag"></i>
+                  <i class="nav-icon fa fa-picture-o"></i>
                   <p>
                   Slider
                   </p>
@@ -90,9 +90,17 @@
             </li>
             <li class="nav-item">
               <a href="{{route('admin.event.index')}}" class="nav-link {{(request()->is('dashboard/event*'))?'active': ''}}">
-                  <i class="nav-icon fa fa-tag"></i>
+                  <i class="nav-icon fa fa-calendar"></i>
                   <p>
                     Event
+                  </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{{route('admin.kontak.index')}}" class="nav-link {{(request()->is('dashboard/kontak*'))?'active': ''}}">
+                  <i class="nav-icon far fa-comment-dots"></i>
+                  <p>
+                    Saran
                   </p>
               </a>
             </li>
@@ -104,14 +112,6 @@
                   </p>
               </a>
             </li> --}}
-            <li class="nav-item">
-                <a href="{{route('logout')}}" class="nav-link">
-                <i class="nav-icon fa fa-sign-out"></i>
-                <p>
-                    Logout
-                </p>
-                </a>
-            </li>
           @php
               $tentang_menu_active = (request()->is('dashboard/tentang*')) ? true : false;
           @endphp
@@ -155,7 +155,15 @@
                 </a>
               </li>
             </ul>
-        </li>
+          </li>
+          <li class="nav-item">
+            <a href="{{route('logout')}}" class="nav-link">
+            <i class="nav-icon fa fa-sign-out"></i>
+            <p>
+                Logout
+            </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

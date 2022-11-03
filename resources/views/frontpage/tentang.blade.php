@@ -21,7 +21,7 @@
                 Tentang Kami
                 
             </h1>
-            <span class="fw_bold" style="color: white;">Anda dapat meninggalkan kritik, saran ataupun menghubungi kami melalui form dibawah ini</span>
+            {{-- <span class="fw_bold" style="color: white;">Anda dapat meninggalkan kritik, saran ataupun menghubungi kami melalui form dibawah ini</span> --}}
         </div>
     </div>
 </section>

@@ -52,7 +52,7 @@ body {
   line-height:28px;
   font-weight:400;
   background:#ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat';
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center top;
@@ -1370,6 +1370,14 @@ img {
 .main-menu .navigation > li > ul > li:last-child > a,
 .main-menu .navigation > li > .megamenu li:last-child > a{
   border-bottom: none;
+}
+
+.custom_box_shadow{
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.custom_border{
+  border: solid 1px #c8c8c8;
 }
 
 .main-menu .navigation > li > ul > li.dropdown > a:after{

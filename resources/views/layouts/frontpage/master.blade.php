@@ -30,6 +30,10 @@
             display: none;
         }
     }
+
+    body{
+        font-family: 'Montserrat' !important;
+    }
 </style>
 @yield('linkheader')
 </head>

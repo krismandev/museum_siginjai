@@ -103,4 +103,9 @@ Route::group(['middleware' => ['auth'],'prefix'=>'dashboard'], function(){
         Route::get("tugas","Dashboard\TentangController@tugasIndex")->name("admin.tentang.tugas.index");
         Route::patch("tugas","Dashboard\TentangController@tugasUpdate")->name("admin.tentang.tugas.update");
     });
+
+    Route::group(['prefix'=>'kontak'], function(){
+        Route::get("/","Dashboard\KontakController@index")->name("admin.kontak.index");
+        Route::get("/{id}","Dashboard\KontakController@detail")->name("admin.kontak.detail");
+    });
 });
