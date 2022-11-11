@@ -45,7 +45,7 @@
 <section class="sidebar-page-container">
     <div class="auto-container" style="max-width: 1200px; margin-bottom: 0px; margin-top: 50px;">
         <div class="row">
-            <div class="col-lg-3">
+            {{-- <div class="col-lg-3">
                 <div style="margin: 0;
                 position: absolute;
                 top: 50%;
@@ -53,8 +53,8 @@
                 transform: translateY(-50%);">
                     <h3>Tentang Museum Siginjei Jambi</h3>
                 </div>
-            </div>
-            <div class="col-lg-3" style="padding: 10px">
+            </div> --}}
+            <div class="col-lg-3 col-sm-6" style="padding: 10px">
                 <div style="border: 0.5px solid; border-radius: 10px; margin: 0px; padding: 20px; border-color: #c8c8c8; height: 200px;">
                     <span>01</span>
                     <h4>Diresmikan Th 2012</h4>  
@@ -62,18 +62,25 @@
                 </div>
             </div>
             
-            <div class="col-lg-3" style="padding: 10px">
+            <div class="col-lg-3 col-sm-6" style="padding: 10px">
                 <div style="border: 0.5px solid; border-radius: 10px; margin: 0px; padding: 20px; border-color: #c8c8c8; height: 200px;">
                     <span>02</span>
                     <h4>Lokasi Strategis</h4>
                     <p class="mt_10">Museum Siginjei Jambi terletak di daerah perkotaan kota Jambi </p>
                 </div>
             </div>
-            <div class="col-lg-3" style="padding: 10px">
+            <div class="col-lg-3 col-sm-6" style="padding: 10px">
                 <div style="border: 0.5px solid; border-radius: 10px; margin: 0px; padding: 20px; border-color: #c8c8c8; height: 200px;">
                     <span>03</span>
-                    <h4>Ribuan Koleksi</h4>
+                    <h4>Ragam Koleksi</h4>
                     <p class="mt_10">Museum Siginjei Jambi memiliki ribuan koleksi - koleksi bersejarah</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6" style="padding: 10px">
+                <div style="border: 0.5px solid; border-radius: 10px; margin: 0px; padding: 20px; border-color: #c8c8c8; height: 200px;">
+                    <span>04</span>
+                    <h4>Pelayanan Umum</h4>
+                    <p class="mt_10">Museum Siginjei Jambi membuka pelayanan untuk umum</p>
                 </div>
             </div>
         </div>
@@ -133,7 +140,7 @@
                     <h3>Akses Virtual Tour Museum Siginjei Jambi dimana saja</h3>
                     <p class="mt_10">Lihat lokasi dan koleksi - koleksi benda bersejarah Museum Siginjei Jambi dengan view 360&#176; dimana saja dan kapanpun</p>
                     <div class="btn-box mt_10">
-                        <a href="index-13.html" class="theme-btn btn-five" style="background: #1a2345;"><span data-text="Get Started" style="color: white !important;">MULAI VIRTUAL TOUR</span></a>
+                        <a href="{{env('VIRTUAL_TOUR','https://virtual-tour.e-siginjeimuseum.online')}}" class="theme-btn btn-five" style="background: #1a2345;"><span data-text="Get Started" style="color: white !important;">MULAI VIRTUAL TOUR</span></a>
                     </div>
                 </div>
             </div>

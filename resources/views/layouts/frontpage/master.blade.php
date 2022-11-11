@@ -11,8 +11,10 @@
 <link rel="icon" href="assets/images/favicon-3.ico" type="image/x-icon">
 
 <!-- Stylesheets -->
-<link href="{{asset('asset_frontpage/css/font-awesome-all.css')}}" rel="stylesheet">
+{{-- <link href="{{asset('asset_frontpage/css/font-awesome-all.css')}}" rel="stylesheet"> --}}
+<link rel="stylesheet" href="{{asset('asset_dashboard/plugins/fontawesome-free/css/all.min.css')}}">
 <link href="{{asset('asset_frontpage/css/flaticon.css')}}" rel="stylesheet">
+<link href="{{asset('asset_frontpage/css/flaticon-2.css')}}" rel="stylesheet">
 <link href="{{asset('asset_frontpage/css/owl.css')}}" rel="stylesheet">
 <link href="{{asset('asset_frontpage/css/bootstrap.css')}}" rel="stylesheet">
 <link href="{{asset('asset_frontpage/css/jquery.fancybox.min.css')}}" rel="stylesheet">
@@ -31,7 +33,15 @@
         }
     }
 
+    @font-face {
+        font-family: "Montserrat";
+        src: url({{asset('asset_frontpage/fonts/Montserrat-Regular.ttf')}}) format("truetype");
+    }
+
     body{
+        font-family: 'Montserrat' !important;
+    }
+    p, h1,h2,h3,h4,h5,h5,b,strong,span,small{
         font-family: 'Montserrat' !important;
     }
 </style>
@@ -182,13 +192,13 @@
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix home-menu">
                                         <li class="{{(request()->is('/'))?'current': ''}}">
-                                            <a href="/">Home</a>
+                                            <a href="/">Beranda</a>
                                         </li>
                                         <li class="{{(request()->is('koleksi*'))?'current': ''}}">
                                             <a href="{{route('koleksi')}}">Koleksi</a>
                                         </li>
                                         <li class="{{(request()->is('virtual*'))?'current': ''}}">
-                                            <a href="https://virtual-tour.e-siginjeimuseum.online/">Virtual Tour</a>
+                                            <a href="{{env('VIRTUAL_TOUR','https://virtual-tour.e-siginjeimuseum.online')}}">Virtual Tour</a>
                                         </li>
                                         <li class="{{(request()->is('event*'))?'current': ''}}">
                                             <a href="{{route('event')}}">Kegiatan</a>
@@ -250,8 +260,8 @@
             <div class="close-btn"><i class="fas fa-times"></i></div>
             
             <nav class="menu-box">
-                {{-- <div class="nav-logo"><a href="index.html"><img src="{{asset('asset_frontpage/images/mobile-logo.png')}}" alt="" title=""></a></div> --}}
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+                
+                {{-- <div class="menu-outer"></div>
                 <div class="contact-info">
                     <h4>Contact Info</h4>
                     <ul>
@@ -268,7 +278,7 @@
                         <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
                         <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
                     </ul>
-                </div>
+                </div> --}}
             </nav>
         </div><!-- End Mobile Menu -->
 
@@ -293,6 +303,22 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <b style="color: white;">MUSEUM <br> SIGINJEI</b>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-left: 20px;">
+                                    <b style="color: white;">IKUTI KAMI</b>
+                                </div>
+                                <div class="row" style="padding-left: 20px;">
+                                    {{-- <i class="fa-brands fa-facebook-f" style="color: white;"></i> --}}
+                                    <div class="p_5">
+                                        <a href="{{env('FB_URL')}}">
+                                            <i class="fab fa-facebook" style="color: white; font-size: 20px;"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p_5">
+                                        <a href="{{env('IG_URL')}}">
+                                            <i class="fab fa-instagram" style="color: white; font-size: 20px;"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 {{-- <div class="text">
@@ -417,6 +443,7 @@
     <script src="{{asset('asset_frontpage/js/jquery.nice-select.min.js')}}"></script>
     <script src="{{asset('asset_frontpage/js/parallax-scroll.js')}}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/ba5890d42b.js" crossorigin="anonymous"></script>
 
     <!-- main-js -->
     <script src="{{asset('asset_frontpage/js/script.js')}}"></script>
