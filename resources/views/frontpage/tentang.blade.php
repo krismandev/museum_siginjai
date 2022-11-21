@@ -13,7 +13,7 @@
 @endsection
 @section('content')
 <section class="page-title p_relative centred">
-    <div class="bg-layer p_absolute l_0 parallax_none parallax-bg" data-parallax='{"y": 100}' style="background-color: #4b76ed;"></div>
+    <div class="bg-layer p_absolute l_0 parallax_none parallax-bg" data-parallax='{"y": 100}' style="background-image: url({{asset('asset_frontpage/images/menu_tentang.png')}})"></div>
     <div class="auto-container">
         <div class="content-box">
             <h1 class="d_block fs_60 lh_70 fw_bold mb_10">
