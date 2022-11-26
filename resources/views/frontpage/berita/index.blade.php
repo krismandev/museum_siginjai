@@ -155,6 +155,11 @@
 
     <section class="blog-grid-one p_relative sec-pad" style="padding-top: 0px;">
         <div class="auto-container" style="max-width: 1200px;">
+            @if (request()->query('search'))
+            <div class="pb_10">
+                <b class="custom-main-color">Hasil pencarian "{{request()->query('search')}}"</b>
+            </div>
+            @endif
             <div class="row clearfix">
                 @foreach ($beritas as $berita)
                 <div class="col-lg-4 col-md-6 col-sm-12 news-block" style="">

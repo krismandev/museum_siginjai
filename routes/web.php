@@ -33,6 +33,8 @@ Route::get("/berita/{id}","FrontPage\BeritaController@detail")->name("berita.det
 Route::get("/event","FrontPage\EventController@index")->name("event");
 Route::get("/event/{id}","FrontPage\EventController@detail")->name("event.detail");
 
+Route::get("/video-dokumenter","FrontPage\EventController@videoDokumenterIndex")->name("video");
+
 Route::get("/kontak","FrontPage\KontakController@index")->name("kontak");
 Route::post("/kontak","FrontPage\KontakController@store")->name("kontak.store");
 Route::get("/tentang","FrontPage\TentangController@index")->name("tentang");
@@ -107,5 +109,14 @@ Route::group(['middleware' => ['auth'],'prefix'=>'dashboard'], function(){
     Route::group(['prefix'=>'kontak'], function(){
         Route::get("/","Dashboard\KontakController@index")->name("admin.kontak.index");
         Route::get("/{id}","Dashboard\KontakController@detail")->name("admin.kontak.detail");
+    });
+
+    Route::group(['prefix'=>'video'], function(){
+        Route::get("/","Dashboard\VideoController@index")->name("admin.video.index");
+        Route::get("/create","Dashboard\VideoController@create")->name("admin.video.create");
+        Route::get("/{id}","Dashboard\VideoController@edit")->name("admin.video.edit");
+        Route::get("/delete/{id}","Dashboard\VideoController@delete")->name("admin.video.delete");
+        Route::post("/","Dashboard\VideoController@store")->name("admin.video.store");
+        Route::patch("/","Dashboard\VideoController@update")->name("admin.video.update");
     });
 });

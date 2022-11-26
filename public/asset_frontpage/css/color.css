@@ -4,6 +4,14 @@
 	color: #f22450;
 }
 
+.custom-main-color{
+	color: #1b2b58;
+}
+
+.custom-main-bg{
+	background-color: #1b2b58;
+}
+
 .handle-preloader{
 	background: -webkit-linear-gradient(0deg, #c335dc, #ff3c56 100%);
 }

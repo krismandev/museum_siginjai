@@ -126,6 +126,11 @@
                 </div>
                 <div class="col-lg-9 col-md-12 col-sm-12 content-side">
                     <div class="auto-container">
+                        @if (request()->query('search'))
+                        <div class="pb_10">
+                            <b class="custom-main-color">Hasil pencarian "{{request()->query('search')}}"</b>
+                        </div>
+                        @endif
                         <div class="row clearfix">
                             @foreach ($koleksis as $koleksi)
                             <div class="col-lg-4 col-md-6 col-sm-12 news-block mb_10">

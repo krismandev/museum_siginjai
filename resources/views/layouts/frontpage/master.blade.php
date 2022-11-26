@@ -200,8 +200,11 @@
                                         <li class="{{(request()->is('virtual*'))?'current': ''}}">
                                             <a href="{{env('VIRTUAL_TOUR','https://virtual-tour.e-siginjeimuseum.online')}}">Virtual Tour</a>
                                         </li>
-                                        <li class="{{(request()->is('event*'))?'current': ''}}">
-                                            <a href="{{route('event')}}">Kegiatan</a>
+                                        <li class="{{(request()->is('event*'))?'current': ''}} dropdown"> <a href="#">Kegiatan</a>
+                                            <ul>
+                                                <li><a href="{{route('event')}}">Kegiatan</a></li>
+                                                <li><a href="{{route('video')}}">Video Dokumenter</a></li>
+                                            </ul>
                                         </li>
                                         <li class="{{(request()->is('berita*'))?'current': ''}}">
                                             <a href="{{route('berita')}}">Berita</a>

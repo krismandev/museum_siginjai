@@ -97,6 +97,14 @@
               </a>
             </li>
             <li class="nav-item">
+              <a href="{{route('admin.video.index')}}" class="nav-link {{(request()->is('dashboard/video*'))?'active': ''}}">
+                  <i class="nav-icon fa fa-file-video-o"></i>
+                  <p>
+                    Video Dokumenter
+                  </p>
+              </a>
+            </li>
+            <li class="nav-item">
               <a href="{{route('admin.kontak.index')}}" class="nav-link {{(request()->is('dashboard/kontak*'))?'active': ''}}">
                   <i class="nav-icon far fa-comment-dots"></i>
                   <p>
